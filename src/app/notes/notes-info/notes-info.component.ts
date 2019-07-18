@@ -23,7 +23,6 @@ export class NotesInfoComponent implements OnInit {
   ngOnInit() {
   }
   goBack() {
-    window.history.back();
-    // this.location.back();
+    this.location.back();
   }
 }
