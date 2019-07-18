@@ -1,0 +1,12 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+footer {
+  padding: 4px;
+  background: linear-gradient(135deg, #91ffd6, #c208ff);
+  text-align: center;
+  color: aliceblue;
+  height: 50px;
+}

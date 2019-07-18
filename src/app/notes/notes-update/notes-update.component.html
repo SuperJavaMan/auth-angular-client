@@ -1,0 +1,22 @@
+<div id="background">
+  <div *ngIf="note == null; else mainWindow">
+    <p class="wait">Please wait for the server's answer...</p>
+  </div>
+  <ng-template #mainWindow>
+    <form class="form-group" [formGroup]="form" (ngSubmit)="edit(form.value)">
+      <div class="form">
+        <p><label for="title">Title</label></p>
+        <p><input type="text" class="form-control" id="title" name="title" formControlName="title"></p>
+        <p><label for="body">Note</label></p>
+        <p><textarea type="text" class="form-control" id="body" name="body" formControlName="body"></textarea></p>
+        <p *ngIf="!form.valid
+                 && form.controls['title'].touched
+                 && form.controls['body'].touched" class="error">All fields are required</p>
+        <nav>
+          <button [disabled]="!form.valid" type="submit">Edit note</button>
+          <button class="goBack" (click)="goBack">Go back</button>
+        </nav>
+      </div>
+    </form>
+  </ng-template>
+</div>

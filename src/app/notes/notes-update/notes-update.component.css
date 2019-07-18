@@ -1,0 +1,44 @@
+form {
+  height: 84vh;
+  margin: 0;
+  padding: 0;
+}
+
+.form {
+  padding-top: 20px;
+  width: 85%;
+  margin: auto;
+}
+
+.title {
+  border-radius: 7px;
+  margin-bottom: 10px;
+}
+.body {
+  border-radius: 7px;
+  margin-bottom: 10px;
+}
+label {
+  color: #7d4880;
+  font-weight: bold;
+  padding: 0;
+  margin-bottom: 5px;
+}
+
+button {
+  margin-left: 5px;
+  border-radius: 7px;
+  border: 0;
+  background: #7d4880;
+  color: aliceblue;
+  font-weight: bold;
+}
+.goBack {
+  background-color: #212529;
+}
+textarea {
+  height: 300px;
+}
+nav {
+  margin-left: 78%;
+}

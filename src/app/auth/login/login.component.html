@@ -1,0 +1,17 @@
+<form id="background" class="form-group" [formGroup]="form" (ngSubmit)="login(form.value)">
+  <div class="form">
+    <p><label for="username">UserName</label></p>
+    <p><input type="text" class="form-control" id="username" name="username" formControlName="username"></p>
+    <p><label for="password">Password</label></p>
+    <p><input type="password" class="form-control" id="password" name="password" formControlName="password"></p>
+    <p *ngIf="!form.valid
+             && form.controls['username'].touched
+             && form.controls['password'].touched" class="error">Invalid password or username</p>
+    <p *ngIf="isLoginFailed" class="error">Wrong UserName or Password. Check your input. {{warningMessage}}</p>
+    <p><button [disabled]="!form.valid" type="submit">Log In</button></p>
+    <div class="signUp">
+    <h6>If you can not figure out why you are not still sign in, Don't worry, just click </h6>
+    <a routerLink="/signIn">this link!</a>
+  </div>
+  </div>
+</form>

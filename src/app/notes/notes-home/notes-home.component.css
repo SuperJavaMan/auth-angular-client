@@ -1,0 +1,49 @@
+.wait {
+  height: 84vh;
+  margin-bottom: 0;
+  color: gray;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 30vh;
+}
+article {
+  padding-top: 10px;
+  max-width: 1000px;
+  margin: auto;
+  min-height: 84vh;
+}
+.title {
+  padding: 5px 5px 5px 10px;
+  color: #edd6f9;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #9a30a0;
+  border-radius: 7px;
+}
+.body {
+  padding: 10px;
+  color: #212529;
+  font-size: 16px;
+  background-color: #ebe5ff;
+  border-radius: 7px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.viewButton {
+  margin-left: 87%;
+  border-radius: 7px;
+  border: 0;
+  background: #9a30a0;
+  color: aliceblue;
+  font-weight: 600;
+}
+.postButton {
+  width: 100%;
+  border-radius: 7px;
+  border: 0;
+  background: #7ecc6c;
+  color: aliceblue;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+

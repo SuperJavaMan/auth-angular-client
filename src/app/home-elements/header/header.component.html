@@ -1,0 +1,10 @@
+<header>
+  <div class="nav-bar" *ngIf="isAuthorized">
+    <p>{{userName}}</p>
+    <button type="button" [routerLink]="['']" (click)="logOut()" class="button">Sign Out</button>
+  </div>
+  <div class="title">
+    <h2>JavaDevsNotes</h2>
+    <h6>The best notes you have ever seen</h6>
+  </div>
+</header>

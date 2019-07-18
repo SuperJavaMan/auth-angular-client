@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: linear-gradient(45deg, #b708ff, #91ff9f);
+  height: 100px;
+}
+.nav-bar {
+  float: right;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+.title {
+  color: aliceblue;
+  padding-left: 10px;
+  padding-top: 15px;
+}
+
+.nav-bar button {
+  background: linear-gradient(45deg, #91ff9fc7, #c208ff5c);
+  color: aliceblue;
+  font-weight: bold;
+  padding-left: 3px;
+  padding-right: 3px;
+  border-radius: 8px;
+  border: thin solid;
+  font-size: smaller;
+}
+
+.nav-bar p {
+  float: left;
+  color: white;
+  font-weight: bold;
+  padding-right: 5px;
+}

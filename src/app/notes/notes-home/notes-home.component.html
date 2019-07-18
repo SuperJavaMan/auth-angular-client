@@ -1,0 +1,21 @@
+<div id="background">
+  <div *ngIf="!isNotesUpdated; else mainWindow">
+    <p class="wait">Please wait for the server's answer...</p>
+  </div>
+  <ng-template #mainWindow>
+    <article>
+      <button class="postButton" routerLink="/addNote">+ Add new note</button>
+      <div *ngFor="let note of notes">
+        <div class="title">
+          {{note.title}}
+        </div>
+        <div class="body">
+         <div>
+           {{note.body.slice(0, 200)}}...
+         </div>
+          <button class="viewButton" [routerLink]="['/note', note.id]">Read more ...</button>
+        </div>
+      </div>
+    </article>
+  </ng-template>
+</div>
