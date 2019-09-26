@@ -19,7 +19,6 @@ export class HeaderComponent implements OnInit {
       }
     });
   }
-
   ngOnInit() {
     this.getUserInfo();
   }
@@ -27,6 +26,7 @@ export class HeaderComponent implements OnInit {
     if (this.token.getToken()) {
       this.isAuthorized = true;
       this.userName = this.token.getUserName();
+      this.userRole = this.token.getAutorities();
     }
   }
   logOut() {

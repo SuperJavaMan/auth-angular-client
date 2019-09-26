@@ -1,38 +1,43 @@
-* {
-  margin: 0;
-  padding: 0;
+.head-wrapper {
+  color: whitesmoke;
+  height: 12vh;
+  width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
+.userInfo-wrapper {
+  font-size: 12px;
+  display: grid;
+  grid-template-columns: minmax(55px, auto) 50px;
+  grid-template-rows: repeat(4, 18px);
+  grid-template-areas:
+    "messages icon"
+    "userName icon"
+    "userRole icon"
+    "exit icon";
+  justify-content: right;
+}
+.icon-wrapper {grid-area: icon;}
 
-header {
-  background: linear-gradient(45deg, #b708ff, #91ff9f);
-  height: 100px;
+.message-wrapper {
+  grid-area: messages;
+  display: grid;
+  justify-content: right;
+  margin-right: -5px;
 }
-.nav-bar {
-  float: right;
-  padding-top: 10px;
-  padding-right: 10px;
-}
+.userName-wrapper {grid-area: userName;}
+.userRole-wrapper {grid-area: userRole; margin-left: 15px}
 
-.title {
-  color: aliceblue;
-  padding-left: 10px;
-  padding-top: 15px;
+.exit-wrapper {
+  grid-area: exit;
+  display: grid;
+  justify-content: right;
+  margin-right: 10px;
 }
-
-.nav-bar button {
-  background: linear-gradient(45deg, #91ff9fc7, #c208ff5c);
-  color: aliceblue;
-  font-weight: bold;
-  padding-left: 3px;
-  padding-right: 3px;
-  border-radius: 8px;
-  border: thin solid;
-  font-size: smaller;
+.logo {
+  margin-top: 5px;
 }
-
-.nav-bar p {
-  float: left;
-  color: white;
-  font-weight: bold;
-  padding-right: 5px;
+img {
+  height: 70px;
 }
+a {color: whitesmoke;}

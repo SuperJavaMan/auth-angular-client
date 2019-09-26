@@ -1,0 +1,38 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+.header-wrapper {
+  grid-area: header;
+  background-color: #6d20c4;
+  display: grid;
+  justify-content: center;
+}
+.main-wrapper {
+  grid-area: main;
+  display: grid;
+  justify-content: center;
+}
+.footer-wrapper {
+  background-color: #6d20c4;
+  grid-area: footer;
+  display: grid;
+  justify-content: center;
+}
+.main-section {
+  display: grid;
+  grid-template-columns: 200px 1000px;
+  grid-column-gap: 10px;
+  grid-template-areas:
+    "aside content";
+}
+.aside {
+  grid-area: aside;
+}
+.content {
+  grid-area: content;
+}

@@ -41,6 +41,7 @@ export class NotesAddComponent implements OnInit {
     this.router.navigate(['/note', this.newId]);
   }
   goBack() {
-    this.location.back();
+    window.history.back();
+    // this.location.back();
   }
 }

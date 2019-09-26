@@ -7,6 +7,7 @@ import {NotesInfoComponent} from '../notes/notes-info/notes-info.component';
 import {NotesAddComponent} from '../notes/notes-add/notes-add.component';
 import {NotesUpdateComponent} from '../notes/notes-update/notes-update.component';
 import {NotesDeleteComponent} from '../notes/notes-delete/notes-delete.component';
+import {UserComponent} from '../profiles/user/user.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -16,7 +17,8 @@ const routes: Routes = [
   { path: 'note/:id', component: NotesInfoComponent },
   { path: 'addNote', component: NotesAddComponent },
   { path: 'editNote/:id', component: NotesUpdateComponent },
-  { path: 'deleteNote/:id', component: NotesDeleteComponent }
+  { path: 'deleteNote/:id', component: NotesDeleteComponent },
+  { path: 'user', component: UserComponent}
 ];
 
 @NgModule({

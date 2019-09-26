@@ -1,10 +1,23 @@
-<header>
-  <div class="nav-bar" *ngIf="isAuthorized">
-    <p>{{userName}}</p>
-    <button type="button" [routerLink]="['']" (click)="logOut()" class="button">Sign Out</button>
-  </div>
-  <div class="title">
-    <h2>JavaDevsNotes</h2>
+<div class="head-wrapper">
+  <div class="logo">
+    <h3>Dev'sNotes</h3>
     <h6>The best notes you have ever seen</h6>
   </div>
-</header>
+  <nav class="userInfo-wrapper" *ngIf="isAuthorized">
+    <div class="message-wrapper">
+      <p>Messages +1</p>
+    </div>
+    <div class="userName-wrapper">
+      <p>{{userName}}</p>
+    </div>
+    <div class="userRole-wrapper">
+      <p>User</p>
+    </div>
+    <div class="exit-wrapper">
+      <a [routerLink]="['']" (click)="logOut()" class="button">Exit</a>
+    </div>
+    <div class="icon-wrapper">
+      <img src="assets/img/userLogo.png">
+    </div>
+  </nav>
+</div>

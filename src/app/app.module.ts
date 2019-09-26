@@ -14,6 +14,7 @@ import { UserComponent } from './profiles/user/user.component';
 import {httpInterceptorProviders} from './auth/auth-interceptor';
 import { HeaderComponent } from './home-elements/header/header.component';
 import { FooterComponent } from './home-elements/footer/footer.component';
+import { AsideComponent } from './home-elements/aside/aside.component';
 
 import {AppRoutingModule} from './app-routing/app-routing.module';
 import {ReactiveFormsModule} from '@angular/forms';
@@ -33,7 +34,8 @@ import {HttpClientModule} from '@angular/common/http';
     NotesDeleteComponent,
     UserComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    AsideComponent
   ],
   imports: [
     BrowserModule,
