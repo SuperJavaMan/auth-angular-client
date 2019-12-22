@@ -38,7 +38,7 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
     if (this.tokenStorage.getToken()) {
       this.username = this.tokenStorage.getUserName();
-      this.authorities = this.tokenStorage.getAutorities();
+      this.authorities = this.tokenStorage.getAuthorities();
       this.isLoggedIn = true;
       this.router.navigate(['/notesHome']);
     }
@@ -50,10 +50,10 @@ export class LoginComponent implements OnInit {
       (jwtResponse: JwtInfo) => {
         this.tokenStorage.saveToken(jwtResponse.accessToken);
         this.tokenStorage.saveUserName(jwtResponse.username);
-        this.tokenStorage.saveAutorities(jwtResponse.authorities);
+        this.tokenStorage.saveAuthorities(jwtResponse.authorities);
 
         this.username = this.tokenStorage.getUserName();
-        this.authorities = this.tokenStorage.getAutorities();
+        this.authorities = this.tokenStorage.getAuthorities();
         this.isLoggedIn = true;
 
         this.exchangeService.loginEvent();

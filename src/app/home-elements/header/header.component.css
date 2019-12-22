@@ -4,6 +4,7 @@
   width: 1200px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-top: 10px;
 }
 .userInfo-wrapper {
   font-size: 12px;
@@ -16,6 +17,7 @@
     "userRole icon"
     "exit icon";
   justify-content: right;
+  margin-top: 7px;
 }
 .icon-wrapper {grid-area: icon;}
 

@@ -19,7 +19,7 @@ describe('AppComponent', () => {
   it(`should have as title 'auth-angular-client'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('auth-angular-client');
+    expect(app.titleHeader).toEqual('auth-angular-client');
   });
 
   it('should render title in a h1 tag', () => {

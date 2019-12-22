@@ -3,19 +3,22 @@
     <p class="wait">Please wait for the server's answer...</p>
   </div>
   <ng-template #mainWindow>
-    <article>
-      <button class="postButton" routerLink="/addNote">+ Add new note</button>
-      <div *ngFor="let note of notes">
-        <div class="title">
+    <main>
+<!--      <button class="postButton" routerLink="/addNote">+ Add new note</button>-->
+      <article *ngFor="let note of notes">
+        <section class="title">
           {{note.title}}
-        </div>
-        <div class="body">
-         <div>
-           {{note.body.slice(0, 200)}}...
-         </div>
-          <button class="viewButton" [routerLink]="['/note', note.id]">Read more ...</button>
-        </div>
-      </div>
-    </article>
+        </section>
+        <section class="body">
+           <div class="text">
+             {{note.body.slice(0, 200)}}...
+           </div>
+          <div class="info-panel">
+            <div> Likes Comments Etc</div>
+            <a [routerLink]="['/note', note.id]">Read more ...</a>
+          </div>
+        </section>
+      </article>
+    </main>
   </ng-template>
 </div>

@@ -22,7 +22,7 @@ export class AuthService {
     return this.http.post<string>(this.registrationUrl, registrationInfo, httpOptions);
   }
   login(loginInfo: LoginInfo): Observable<JwtInfo> {
-    console.log(loginInfo)
+    console.log(loginInfo);
     return this.http.post<JwtInfo>(this.loginUrl, loginInfo, httpOptions);
   }
 }

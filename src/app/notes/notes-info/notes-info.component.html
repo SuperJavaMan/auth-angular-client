@@ -4,24 +4,21 @@
   </div>
   <ng-template #mainWindow>
     <article>
-      <nav>
-        <button class="viewButton" (click)="goBack()">Go back</button>
-      </nav>
       <div class="title">
         {{note.title}}
       </div>
       <div class="body">
         {{note.body}}
       </div>
-      <div class="panel">
+      <div class="info-panel">
+        <div>
+          Likes, Comments and etc
+        </div>
         <nav>
           <button class="viewButton" [routerLink]="['/addNote']">+ Add new</button>
           <button class="viewButton" [routerLink]="['/editNote', id]">Edit</button>
           <button class="viewButton" [routerLink]="['/deleteNote', note.id]">Delete</button>
         </nav>
-        <div class="text">
-          Likes, Comments and etc
-        </div>
       </div>
     </article>
   </ng-template>

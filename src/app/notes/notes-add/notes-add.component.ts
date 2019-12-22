@@ -33,7 +33,7 @@ export class NotesAddComponent implements OnInit {
     this.newId = null;
   }
   post(data) {
-    this.note = new Note(data.title, data.body);
+    this.note = new Note(data.titleHeader, data.body);
     this.noteService.addNote(this.note).subscribe(note => { this.newId = note.id;
                                                                   this.goToNewNote(); });
   }

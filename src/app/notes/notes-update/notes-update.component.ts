@@ -46,7 +46,7 @@ export class NotesUpdateComponent implements OnInit {
     console.log(this.note);
   }
   edit(data) {
-    this.note = new Note(data.title, data.body);
+    this.note = new Note(data.titleHeader, data.body);
     this.noteService.editNote(this.id, this.note).subscribe();
     this.goToNewNote();
   }

@@ -7,43 +7,78 @@
   padding-top: 30vh;
 }
 article {
-  padding-top: 10px;
-  max-width: 1000px;
-  margin: auto;
-  min-height: 84vh;
+  margin-left: 10px;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1000px;
+  grid-template-rows: 30px 100px;
 }
-.title {
-  padding: 5px 5px 5px 10px;
-  color: #edd6f9;
-  font-weight: bold;
-  font-size: 20px;
-  background-color: #9a30a0;
-  border-radius: 7px;
+.title-header {
+  padding-left: 10px;
+  font-weight: 600;
+  color: #dde5e6;
+  background-color: #6d20c4;
+  display: flex;
+  align-items: center;
 }
 .body {
-  padding: 10px;
-  color: #212529;
-  font-size: 16px;
-  background-color: #ebe5ff;
-  border-radius: 7px;
-  font-weight: 500;
-  margin-bottom: 5px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 25px;
+  background-color: #878686;
 }
-.viewButton {
-  margin-left: 87%;
-  border-radius: 7px;
-  border: 0;
-  background: #9a30a0;
-  color: aliceblue;
-  font-weight: 600;
+.text {
+  color: #000000de;
+  padding-left: 10px;
 }
-.postButton {
-  width: 100%;
-  border-radius: 7px;
-  border: 0;
-  background: #7ecc6c;
-  color: aliceblue;
-  font-weight: 600;
-  margin-bottom: 10px;
+.info-panel {
+  background-color: #6d20c4;
+  display: grid;
+  grid-template-columns: 1fr 100px;
+  align-items: center;
 }
+.info-panel > a {
+  color: #dde5e6;
+}
+main {padding-bottom: 10px;}
+/*article {*/
+/*  padding-top: 10px;*/
+/*  max-width: 1000px;*/
+/*  margin: auto;*/
+/*  min-height: 84vh;*/
+/*}*/
+/*.title {*/
+/*  padding: 5px 5px 5px 10px;*/
+/*  color: #edd6f9;*/
+/*  font-weight: bold;*/
+/*  font-size: 20px;*/
+/*  background-color: #9a30a0;*/
+/*  border-radius: 7px;*/
+/*}*/
+/*.body {*/
+/*  padding: 10px;*/
+/*  color: #212529;*/
+/*  font-size: 16px;*/
+/*  background-color: #ebe5ff;*/
+/*  border-radius: 7px;*/
+/*  font-weight: 500;*/
+/*  margin-bottom: 5px;*/
+/*}*/
+/*.viewButton {*/
+/*  margin-left: 87%;*/
+/*  border-radius: 7px;*/
+/*  border: 0;*/
+/*  background: #9a30a0;*/
+/*  color: aliceblue;*/
+/*  font-weight: 600;*/
+/*}*/
+/*.postButton {*/
+/*  width: 100%;*/
+/*  border-radius: 7px;*/
+/*  border: 0;*/
+/*  background: #7ecc6c;*/
+/*  color: aliceblue;*/
+/*  font-weight: 600;*/
+/*  margin-bottom: 10px;*/
+/*}*/
 

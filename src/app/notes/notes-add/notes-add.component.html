@@ -1,15 +1,30 @@
 <form id="background" class="form-group" [formGroup]="form" (ngSubmit)="post(form.value)">
   <div class="form">
-    <p><label for="title">Title</label></p>
-    <p><input type="text" class="form-control" id="title" name="title" formControlName="title"></p>
-    <p><label for="body">Note</label></p>
-    <p><textarea type="text" class="form-control" id="body" name="body" formControlName="body"></textarea></p>
-    <p *ngIf="!form.valid
-             && form.controls['title'].touched
-             && form.controls['body'].touched" class="error">All fields are required</p>
+    <div class="title-header">
+      <div>
+        <label for="title">Title</label>
+        <input type="text" class="form-control" id="title" name="title" formControlName="title">
+      </div>
+      <div>
+        <label>Tags</label>
+        <input type="text" class="form-control tag" name="tags" formControlName="tags">
+      </div>
+      <div>
+        <label>Access</label>
+        <div>
+          Public Private
+        </div>
+      </div>
+    </div>
+    <div class="body">
+      <label for="body">note</label>
+      <textarea type="text" class="form-control" id="body" name="body" formControlName="body"></textarea>
+<!--      <p *ngif="!form.valid-->
+<!--               && form.controls['title'].touched-->
+<!--               && form.controls['body'].touched" class="error">all fields are required</p>-->
+    </div>
     <nav>
       <button [disabled]="!form.valid" type="submit">+ Add note</button>
-      <button class="goBack" (click)="goBack()">Go back</button>
     </nav>
   </div>
 </form>

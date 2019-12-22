@@ -2,6 +2,7 @@ form {
   height: 84vh;
   margin: 0;
   padding: 0;
+  background-color: #878686;
 }
 
 .form {
@@ -9,17 +10,25 @@ form {
   width: 85%;
   margin: auto;
 }
-
-.title {
-  border-radius: 7px;
-  margin-bottom: 10px;
+.title-header {
+  padding-left: 10px;
+  font-weight: 600;
+  background-color: #6d20c4;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr;
+}
+.tag {
+  width: 70px;
 }
 .body {
-  border-radius: 7px;
-  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr;
+  background-color: #878686;
 }
 label {
-  color: #7d4880;
+  color: whitesmoke;
   font-weight: bold;
   padding: 0;
   margin-bottom: 5px;

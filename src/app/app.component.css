@@ -26,7 +26,7 @@
 .main-section {
   display: grid;
   grid-template-columns: 200px 1000px;
-  grid-column-gap: 10px;
+  /*grid-column-gap: 10px;*/
   grid-template-areas:
     "aside content";
 }
